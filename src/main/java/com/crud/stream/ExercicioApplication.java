@@ -21,13 +21,13 @@ public class ExercicioApplication {
 		SpringApplication.run(ExercicioApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner init (PessoaRepository pessoaRepository) {
-		return args -> {
-			for(int i = 0; i < 4; i++) {
-				Pessoa pessoa = new Pessoa(String.valueOf(UUID.randomUUID()), this.PESSOA + String.valueOf(i+1), (int) (Math.random() * (1 - 80) * -1), "brasileiro");
-				pessoaRepository.save(pessoa);
-			}
-		};
-	}
+//	@Bean
+//	CommandLineRunner init (PessoaRepository pessoaRepository) {
+//		return args -> {
+//			for(int i = 0; i < 4; i++) {
+//				Pessoa pessoa = new Pessoa(String.valueOf(UUID.randomUUID()), this.PESSOA + String.valueOf(i+1), (int) (Math.random() * (1 - 80) * -1), "brasileiro");
+//				pessoaRepository.save(pessoa);
+//			}
+//		};
+//	}
 }
