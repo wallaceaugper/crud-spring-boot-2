@@ -4,9 +4,15 @@
              http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd
              http://www.liquibase.org/xml/ns/dbchangelog-ext
              http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+<!--    Lẽ todos os scripts-->
+<!--    <preConditions>-->
+<!--        <dbms type="mysql" />-->
+<!--    </preConditions>-->
+<!--    <includeAll path="src/main/resources/db-scripts/" />-->
 
-<preConditions>
-    <dbms type="mysql" />
-</preConditions>
-<includeAll path="src/main/resources/db-scripts/scripts/" />
+<!--    Lê script a script-->
+    <changeSet author="wallace" id="202102051540">
+        <validCheckSum>ANY</validCheckSum>
+        <sqlFile relativeToChangelogFile="true" splitStatements="true" stripComments="true" path="version-202102051540__initial_script.sql" />
+    </changeSet>
 </databaseChangeLog>
