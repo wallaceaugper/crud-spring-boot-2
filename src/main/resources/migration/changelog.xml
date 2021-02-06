@@ -15,4 +15,9 @@
         <validCheckSum>ANY</validCheckSum>
         <sqlFile relativeToChangelogFile="true" splitStatements="true" stripComments="true" path="version-202102051540__initial_script.sql" />
     </changeSet>
+
+    <changeSet author="wallace" id="202102061220">
+        <validCheckSum>ANY</validCheckSum>
+        <sqlFile relativeToChangelogFile="true" splitStatements="true" stripComments="true" path="version-202102061220__insert_pessoa.sql" />
+    </changeSet>
 </databaseChangeLog>

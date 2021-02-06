@@ -68,7 +68,7 @@
 				<artifactId>liquibase-maven-plugin</artifactId>
 				<version>4.2.2</version>
 				<configuration>
-					<changeLogFile>src/main/resources/db-scripts/changelog.xml</changeLogFile>
+					<changeLogFile>src/main/resources/migration/changelog.xml</changeLogFile>
 					<driver>com.mysql.jdbc.Driver</driver>
 				</configuration>
 				<executions>
