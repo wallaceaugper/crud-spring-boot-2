@@ -2,19 +2,21 @@ package com.crud.stream.model;
 
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@SQLDelete(sql = "update pessoa set deleted = 'true' where id = ?")
+@Where(clause = "deleted = 'false'")
 public class Pessoa implements Serializable {
 
     @Id
@@ -26,4 +28,6 @@ public class Pessoa implements Serializable {
     private int idade;
 
     private String nacionalidade;
+
+    private String deleted;
 }

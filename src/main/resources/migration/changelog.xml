@@ -20,4 +20,9 @@
         <validCheckSum>ANY</validCheckSum>
         <sqlFile relativeToChangelogFile="true" splitStatements="true" stripComments="true" path="version-202102061220__insert_pessoa.sql" />
     </changeSet>
+
+    <changeSet author="wallace" id="202102081630">
+        <validCheckSum>ANY</validCheckSum>
+        <sqlFile relativeToChangelogFile="true" splitStatements="true" stripComments="true" path="version-202102081630__alter_table_and_update_soft_delete.sql" />
+    </changeSet>
 </databaseChangeLog>
