@@ -50,6 +50,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>stream</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -81,7 +82,7 @@
 						<configuration>
 							<url>jdbc:mysql://localhost:3306/stream</url>
 							<username>root</username>
-							<password>123</password>
+							<password>root</password>
 						</configuration>
 					</execution>
 				</executions>
