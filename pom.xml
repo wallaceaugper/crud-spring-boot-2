@@ -70,7 +70,7 @@
 				<version>4.2.2</version>
 				<configuration>
 					<changeLogFile>src/main/resources/migration/changelog.xml</changeLogFile>
-					<driver>com.mysql.jdbc.Driver</driver>
+					<driver>com.mysql.cj.jdbc.Driver</driver>
 				</configuration>
 				<executions>
 					<execution>
